@@ -75,9 +75,9 @@ class Functions(QMainWindow, Ui_Recipe_Book):
                 content.writerow(['Beef', self.Input_Recipe_Name.text(), self.Input_Recipe_Text.toPlainText()])
             elif self.Button_Pork.isChecked():
                 content.writerow(['Pork', self.Input_Recipe_Name.text(), self.Input_Recipe_Text.toPlainText()])
-            elif self.Button_Tofu.isChecked:
+            elif self.Button_Tofu.isChecked():
                 content.writerow(['Tofu', self.Input_Recipe_Name.text(), self.Input_Recipe_Text.toPlainText()])
-            else:
+            elif self.Button_Fish.isChecked():
                 content.writerow(['Fish', self.Input_Recipe_Name.text(), self.Input_Recipe_Text.toPlainText()])
         self.Group_Add.hide()
         self.Group_Success.show()
